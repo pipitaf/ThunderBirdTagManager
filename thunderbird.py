@@ -3,7 +3,7 @@ import os
 
 
 
-print('TB TAG manager || By the IT guy')
+print('TB TAG manager || By Pipitaf')
 
 appdata = os.getenv('APPDATA')
 tbpath = os.path.join(appdata, 'Thunderbird','Profiles')
@@ -13,34 +13,34 @@ dir = list(dir)
 
 
 
-print('Dirs disponibles:')
+print('Avaliable dirs:')
 for index, item in enumerate(dir, 1):
     print(f"{index}. {item}")
 
-seleccion = int(input("Introduce the number: ")) - 1
+select = int(input("Select: ")) - 1
 
 
-if 0 <= seleccion < len(dir):
-    seleccionado = dir[seleccion]
-    print(f"Has seleccionado: {seleccionado}")
+if 0 <= select < len(dir):
+    choice = dir[select]
+    print(f"You chosed: {choice}")
 else:
-    print('No válida')
+    print("Choice wasn't valid")
 
 
 txt = Path(__file__).parent / 'etiquetas.txt'
 
-js = os.path.join(tbpath, seleccionado, 'prefs.js')
+js = os.path.join(tbpath, choice, 'prefs.js')
 
 
-def etiquetas(og,copia): 
+def insert(og,copy): 
 	with open(og, 'r', encoding='utf-8') as start:
-		cosas = start.read()
+		opog = start.read()
 
 
-	with open(copia, 'a', encoding='utf-8') as end:
+	with open(copy, 'a', encoding='utf-8') as end:
 		end.write('\n')
-		end.write(cosas)
+		end.write(opog)
 
 
 
-etiquetas(txt,js)
+insert(txt,js)
