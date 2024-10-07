@@ -1,0 +1,16 @@
+user_pref("mailnews.tags.$label5.color", "#7f36f5");
+user_pref("mailnews.tags.$label5.tag", "5. FCL");
+user_pref("mailnews.tags.$label2.color", "#23od06");
+user_pref("mailnews.tags.$label2.tag", "6.PIS");
+user_pref("mailnews.tags.$label3.color", "#324123");
+user_pref("mailnews.tags.$label3.tag", "212");
+user_pref("mailnews.tags.$label4.color", "#234342");
+user_pref("mailnews.tags.$label4.tag", "ALBARA");
+user_pref("mailnews.tags.$label5.color", "#213123");
+user_pref("mailnews.tags.$label5.tag", "3BERTOO");
+user_pref("mailnews.tags.$label6.color", "#312313");
+user_pref("mailnews.tags.$label6.tag", "2313");
+user_pref("mailnews.tags.$label7.color", "#321313");
+user_pref("mailnews.tags.$label7.tag", "reo");
+user_pref("mailnews.tags.$label8.color", "#342451");
+user_pref("mailnews.tags.$label8.tag", "2.WIDA");
